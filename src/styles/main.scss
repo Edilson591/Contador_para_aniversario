@@ -1,0 +1,29 @@
+@use 'hero';
+@use 'components/buttons';
+@use 'infos';
+@use 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+    color: variables.$TextColor;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+
+   
+    @media (max-width:640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width:1024px) {
+        max-width: 90%;
+    }
+
+}

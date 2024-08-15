@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador para seu aniversario</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/main.scss">
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero__logo">
+                <img class="hero__logo__img" src="imagens/logo_aniversario.png" alt="Logo Aniversario">
+                <p class="hero__logo__birthday" id="birthdayTop">Feliz Aniversario</p>
+            </div>
+            <div class="hero__inputs">
+                <div class="hero__inputs__content">
+                    <label for="eventTime">Selecione a data do seu aniversário:</label>
+                    <div class="hero__inputs__date">
+                        <input type="date" class="date" id="eventTime" required>
+                        <button type="submit" class="button" id="dateVerificar">Verificar</button>
+                    </div>
+                </div>
+                <p class="hero__inputs__text">
+                    O seu aniversário começa em
+                </p>
+                <div class="hero__inputs__results">
+                    <span id="results"></span>
+                    <p class="hero__inputs__birthday" id="birthdayButton">Parabéns pelo seu dia</p>
+                    <button type="button" id="clearButton"
+                        class="button button--is-active  button--secundary">x</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="infos__birthday infos__birthday--first-details">
+        <div class="container">
+            <div class="infos__birthday__details">
+                <h2 class="infos__birthday__details__title">
+                    Informações Importantes
+                </h2>
+                <p class="infos__birthday__details__description">
+                    No nosso site, oferecemos um recurso personalizado que permite calcular quantos dias faltam para o
+                    seu próximo aniversário. No seu caso falta <span id="infoDay">0</span> para o grande dia. Ao inserir
+                    sua data de nascimento, nosso sistema realiza uma contagem
+                    regressiva precisa até o dia especial, levando em consideração o ano atual.
+                </p>
+            </div>
+            <img src="imagens/info-birthday1.png" class="infos__birthday__image"
+                alt="informação sobre o seu aniversario">
+        </div>
+    </section>
+    <section class="infos__birthday infos__birthday--second-details infos__birthday--image-left ">
+        <div class="container">
+            <div class="infos__birthday__details">
+                <h2 class="infos__birthday__details__title">
+                    Detalhes do seu aniversario
+                </h2>
+                <p class="infos__birthday__details__description">
+                    Você tem <span id="detailsYear">28 anos e já completou</span> mais um ano de vida este ano. Parabéns pela sua idade! Seu próximo
+                    aniversário será apenas no ano que vem, e até lá, você pode aproveitar o tempo para planejar algo
+                    especial para comemorar esse dia tão importante. Este é um momento perfeito para refletir sobre suas
+                    realizações até agora e sobre o que deseja alcançar no próximo ano. Cada aniversário marca o início
+                    de um novo ciclo, uma nova oportunidade para crescimento e aprendizado.
+                </p>
+            </div>
+            <img src="imagens/info-birthday2.avif" class="infos__birthday__image"
+                alt="informação sobre o seu aniversario">
+        </div>
+    </section>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

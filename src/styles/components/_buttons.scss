@@ -1,0 +1,27 @@
+@use '../variables.scss';
+
+.button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: variables.$secondaryTextColor;
+    font-weight: bold;
+    cursor: pointer;
+
+    &--is-active {
+        display: none;
+    }
+
+    &--secundary {
+        background: transparent;
+        border: 1px solid;
+        border-radius: 50%;
+        font-size: 18px;
+        padding: 2px 6px;
+        color: variables.$TextColor;
+        transition: background-color .5s ease;
+        &:hover {
+            background-color: variables.$corDelete;
+        }
+    }
+}
