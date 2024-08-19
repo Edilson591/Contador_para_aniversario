@@ -137,7 +137,7 @@ function countDate(dateValue) {
         hiddenButton.classList.add(keyHideen);
     } else {
         getResultsTime.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        infoDay.innerHTML =  days >  1 ?  `${days} dias` : `${days} dia`;  
+        infoDay.innerHTML =  days >  1 ?  `faltam ${days} dias` : `falta ${days} dia`;  
         birthdayTop.classList.remove(birtdayActiveTop);
         birthdaybutton.classList.remove(birtdayActiveBottun);
     }
